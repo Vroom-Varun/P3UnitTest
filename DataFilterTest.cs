@@ -38,5 +38,14 @@ namespace P3UnitTest
             int[] result = d1.Scramble(testLargeMode);
             Assert.AreEqual(result[0], 99);
         }
+        [TestMethod]
+        public void TestInvalidArrayScrambleFunction()
+        {
+            int[] testLargeMode = { 10 };
+            DataFilter d1 = new DataFilter(97, testLargeMode);
+            int[] result = d1.Scramble(testLargeMode);
+            Assert.AreEqual(result, null);
+        }
+
     }
 }

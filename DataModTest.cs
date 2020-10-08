@@ -7,6 +7,7 @@ namespace P3UnitTest
     public class DataModTest
     {
         [TestMethod]
+        //Tests functionality 
         public void TestDataModFilter()
         {
             int[] testLargeMode = { 10, 99, 100 };
@@ -21,6 +22,8 @@ namespace P3UnitTest
         }
 
         [TestMethod]
+        //Tests functionality 
+
         public void TestDataModScramble()
         {
             int[] testLargeMode = { 11, 95, 100 };
